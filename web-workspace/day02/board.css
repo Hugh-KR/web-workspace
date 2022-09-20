@@ -1,0 +1,23 @@
+#btn{
+    color: green;
+    background: white;
+    font-size: 20px;
+    width: 120px;
+    height: 30px;
+}
+
+#sub_b{
+    background: yellow;
+}
+
+.input{
+    background: pink;
+}
+
+.input_b{
+    background: yellow;
+}
+
+td{
+    color: rgb(0, 0, 142);
+}
