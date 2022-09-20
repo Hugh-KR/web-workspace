@@ -5,6 +5,9 @@
     width: 120px;
     height: 30px;
 }
+#btn:hover{
+    background: rgb(203, 148, 255);
+}
 
 #sub_b{
     background: yellow;
@@ -21,3 +24,4 @@
 td{
     color: rgb(0, 0, 142);
 }
+
