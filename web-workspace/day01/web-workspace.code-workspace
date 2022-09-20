@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "web-workspace",
+			"path": ".."
+		},
+		{
+			"name": "day02",
+			"path": "../../../../4학년_2학기/멀티캠퍼스/day02"
+		}
+	],
+	"settings": {}
+}
