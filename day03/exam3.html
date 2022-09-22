@@ -7,10 +7,12 @@
     <title>Document</title>
     <script>
       function payment() {
+        store = document.getElementById("store").value;
+        pay = document.getElementById("pay").value;
         way = document.getElementById("way").value;
-        if (way == "1") {
-          d1.innerHTML = "일치";
-        }
+
+        d1.innerHTML =
+          store + "에서" + pay + "원을 결제수단" + way + "번으로 결제했습니다.";
       }
     </script>
   </head>
@@ -20,7 +22,7 @@
     결재금액: <input type="text" id="pay" /> <br />
     입력수단(1)계좌이체, 2)신용카드, 3)휴대폰결제) <br />
     <input type="text" id="way" /> <br />
-    <button onclick="payment">결제 버튼</button>
+    <button onclick="payment()">결제 버튼</button>
     <hr color="blue" />
     <div id="d1"></div>
   </body>
