@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function payment() {
+        way = document.getElementById("way").value;
+        if (way == "1") {
+          d1.innerHTML = "일치";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <hr color="red" />
+    구매상점: <input type="text" id="store" /> <br />
+    결재금액: <input type="text" id="pay" /> <br />
+    입력수단(1)계좌이체, 2)신용카드, 3)휴대폰결제) <br />
+    <input type="text" id="way" /> <br />
+    <button onclick="payment">결제 버튼</button>
+    <hr color="blue" />
+    <div id="d1"></div>
+  </body>
+</html>

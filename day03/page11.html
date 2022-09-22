@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      user_id = prompt("사용자 id입력.");
+      if (user_id == "admin") {
+        alert("브라우저에 관리자로 로그인이 되었습니다.");
+      } else {
+        alert("브라우저에 일반 유저로 로그인이 되었습니다.");
+      }
+
+      loc = prompt("당신은 어디로 가고 싶나요?");
+      if (loc == "산") {
+        alert("당신은 산을 선택 하셨군요!! 한라산으로 가볼까요?");
+        location.href =
+          "https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500685";
+      } else if (loc == "바다") {
+        alert("당신은 바다를 선택 하셨군요!! 영일대로 가볼까요?");
+        location.href =
+          "https://ko.wikipedia.org/wiki/%EC%98%81%EC%9D%BC%EB%8C%80%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5";
+      } else {
+        alert("당신은 강을 선택 하셨군요!! 태화강으로 가볼까요?");
+        location.href = "http://www.sisa-news.com/news/article.html?no=213353";
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
