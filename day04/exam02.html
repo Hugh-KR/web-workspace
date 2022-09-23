@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#pay_now").click(function () {
+          pay_way = parseInt($("pay_way"));
+          $("#d1").html("");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    결제금액: <input type="text" id="pay_value" /> <br />
+    1)계좌이체, 2)신용카드, 3)휴대폰결제 <br />
+    결제수단: <input type="text" id="pay_way" />
+    <button id="pay_now">결제하기</button><br />
+    <hr color="red" />
+    회원가입할 id입력: <input type="text" id="id" />
+    <button id="check">회원가입시 id중복 체크</button><br />
+    <hr color="red" />
+    인증받을 전화번호 입력: <input type="text" id="tel" />
+    <button id="check_num">인증번호 받기</button><br />
+    <hr color="green" />
+    <div id="d1"></div>
+  </body>
+</html>

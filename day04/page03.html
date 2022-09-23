@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      // $ => document(html의 body)
+      // 제이쿼리에서는 익명함수를 많이쓴다.
+      // 브라우저는 html문서를 ram dom tree 구조를 가지고 ram에 저장.
+
+      $(function () {
+        $("#b1").click(function () {
+          price = parseInt($("#price").val());
+          count = parseInt($("#count").val());
+          alert(price * count);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    커피가격: <input type="text" id="price" /> <br />
+    커피수량: <input type="text" id="count" /> <br />
+    <button id="b1">커피 결제금액 확인</button>
+  </body>
+</html>
