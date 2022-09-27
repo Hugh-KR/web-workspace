@@ -24,7 +24,7 @@ public class Exam02 {
 		String radius = JOptionPane.showInputDialog("반지름?");
 		double radius1 = Double.parseDouble(radius);
 		
-		System.out.println(Math.pow((PI*radius1),2));
+		System.out.printf("%.2f",Math.pow(radius1,2)*PI);
 	}
 
 }
